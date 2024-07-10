@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://finalfront-1bleqzjbj-rishabh-rajs-projects-5c4aa509.vercel.app"],
+        origin: ["https:finalfront-rishabh-rajs-projects-5c4aa509.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
