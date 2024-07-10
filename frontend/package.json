@@ -32,7 +32,7 @@
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom"
   },
-  "proxy": "final-two-red.vercel.app",
+  "proxy": "https://final-two-red.vercel.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
