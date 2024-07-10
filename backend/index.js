@@ -12,6 +12,13 @@ require('dotenv/config'); //enables using .env file
 
 const app = express();
 
+app.use(cors(
+    {
+        origin: ["https://final-two-red.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+    ));
 app.use(bodyParser.json());
 app.use(express.json()); //added
 app.use(bodyParser.urlencoded({extended:true})); //modified, false to true
