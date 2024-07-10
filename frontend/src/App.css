@@ -1,9 +1,12 @@
-/*For entire app, careful when adding more as it may affect every page*/
-/*testBranch*/
+/* Global styles for your entire application */
+/* Note: Careful when making changes as they may affect every page */
+
+/* Base styles */
 .App {
   text-align: center;
-  background-color: hsl(0, 0%, 100%);
+  background-color: #e0f7fa; /* Light cyan background */
   min-height: 100vh;
+  font-family: Arial, sans-serif; /* Example font family */
 }
 
 .App-logo {
@@ -17,67 +20,53 @@
   }
 }
 
-.welcomeScreen{
-  font-size: 80px
+/* Typography */
+.welcomeScreen {
+  font-size: 4rem; /* Larger font size */
+  margin-top: 2rem;
 }
 
-.homeMsg{
-  font-size: 50px
+.homeMsg {
+  font-size: 2.5rem; /* Slightly smaller font size */
 }
 
-.quote{
-  font-size: 20px
+.quote {
+  font-size: 1.5rem; /* Adjusted font size for quotes */
 }
 
-.paymentButton{
+/* Buttons and interactive elements */
+.paymentButton,
+.TableGenButton,
+.start-reservation,
+.btn-work,
+.btn-work-reg {
+  width: 225px;
+  height: 55px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  padding: 5%;
-  bottom: -11px;
-  height: 0px;
-  width: 15px;
-  border-radius: 25px;
-  background-color: rgb(163, 104, 104);
-}
-
-/*
-.App-header {
-  background-color: #282c34;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-*/
-/*
-.App-contents {
-  padding: 70px 0;
+  padding: 0 1rem;
+  margin: 1rem auto; /* Improved spacing */
+  line-height: 50px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-*/
-
-.App-link {
-  color: #61dafb;
+  background-color: #00796b; /* Teal button color */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paymentButton:hover,
+.TableGenButton:hover,
+.start-reservation:hover,
+.btn-work:hover,
+.btn-work-reg:hover {
+  background-color: #004d40; /* Darker teal shade on hover */
 }
 
-.wrapper{
+/* Section specific styles */
+.wrapper {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -86,80 +75,26 @@
   align-items: center;
 }
 
-/*For styling reservation*/
-.userCredentialsReserve{
+.userCredentialsReserve {
   margin-left: -50px;
   text-align: left;
 }
 
-.StarIcon{
-  fill: indianred;
-}
-
-.cuisine{
-  color: #ffffff;
-}
-
-.location{
-  color:  #ffffff;
-}
-
-.main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.info1{
-  background-color: #e6a1a1;
+.info1 {
+  background-color: #80deea; /* Light teal background */
   border: 5px solid white;
-  justify-content: space-between;
   border-radius: 28px;
-  display: flex;
-  padding: 10%;
+  padding: 2rem; /* Increased padding for better spacing */
+  color: #004d40; /* Dark teal text color */
+  width: max-content;
   margin: auto;
-  color: #282c34;
-  width:max-content;
 }
 
-.TableGenButton{
-  right: 100px;
-  padding: 5%;
-  border-radius: 25px;
-  background-color: rgb(163, 104, 104);
-}
-
-.tableListText{
+.tableListText {
   text-align: center;
 }
 
-#guestNum{
-  border: none;
-  background: transparent;
-  -webkit-appearance: none;
-  border-bottom-left-radius: 28px;
-  border-top-left-radius: 28px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.GuestPick{
-  order: 1;
-}
-
-.divider{
-  order: 2;
-  border-right: 2px solid #818386;
-  padding-left: 5%;
-  height: -50px;
-}
-
-.DatePick{
-  order: 3;
-  vertical-align: top;
-}
-
-.date-input-box{
+.date-input-box {
   width: 260px;
   height: 55px;
   border-radius: 24px;
@@ -171,23 +106,7 @@
   padding: 15px;
 }
 
-.dt{
-  align-self: center;
-  padding-left: 6%;
-  padding-right: 5%;
-}
-
-#menuDish{
-  border-radius: 10%;
-  width: 100%;
-  height:100%;
-}
-
-.s3{
-  width: max-content;
-}
-
-.commentBox{
+.commentBox {
   position: relative;
   width: 225px;
   height: 55px;
@@ -199,204 +118,129 @@
   padding: 15px;
 }
 
-/*
-.customerInfo{
-  background-color: rgb(177, 162, 162);
-  margin: auto;
-  border: 5px solid #5c5757;
-  border-radius: 28px;
-  display: flex;
-  padding: 8%;
-  color: #282c34;
-  text-align: left;
-  width: max-content;
-  margin-top: 10%;
-}
-
-.tableCombineGen{
-  background-color: rgb(177, 162, 162);
-  margin: auto;
-  border: 5px solid #5c5757;
-  border-radius: 28px;
-  display: flex;
-  padding: 8%;
-  color: #282c34;
-  width: max-content;
-}
-*/
-
-/*Smooth edges for input fields*/
-.inp-text-input{
-  width: 800px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-.inp-text-input-submit-payment{
-  width: 125px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding-left: 4px;
-  margin: 0 auto;
-  line-height: 50px;
-  text-align: center;
-}
-
-.inp-text-input-reserve{
-  width: 225px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-.inp-text-input-loginReg{
-  width: 225px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 15px;
-}
-
-.start-reservation{
-  width: 225px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  position: relative;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-/*For styling login/register*/
-.loginRegisterTitle{
-  height: 100px;
-  width: 100%;
-  font-size: 50px;
-  line-height:6;
-}
-
-.loginRegisterCentered{
-  background-color: #e6a1a1;
+.loginRegisterCentered {
+  background-color: #80deea; /* Light teal background */
   margin: auto;
   border: 5px solid white;
   border-radius: 28px;
-  display: flex;
-  padding: 8%;
-  color: #282c34;
+  padding: 2rem; /* Increased padding for better spacing */
+  color: #004d40; /* Dark teal text color */
   text-align: center;
   width: max-content;
   margin-top: 10%;
 }
 
-.loginRegisterError{
-  height: 0px;
-  width: 100%;
-  font-size: 25px;
-  line-height:10;
-}
-
-.btn-work{
-  width: 225px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding-left: 85px;
-  margin: 0 auto;
-  line-height: 50px;
-  text-align: center;
-}
-
-.btn-work-reg{
-  width: 225px;
-  height: 55px;
-  border-radius: 24px;
-  display: flex;
-  overflow: visible;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding-left: 80px;
-  margin: 0 auto;
-  line-height: 50px;
-  text-align: center;
-}
-
-/*For password visibility toggle*/
-.password{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 0.1ch;
-}
-
-i{
-  position: relative;
-  bottom: 40px;
-  left: 100px;
-  margin-left: -24px;
-  cursor: pointer;
-}
-
-/*For NavBar*/
-.nav{
-  background-color: #e6a1a1;
+/* Navigation bar */
+.nav {
+  background-color: #80deea; /* Light teal background */
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
+  align-items: center;
+  padding: 1rem; /* Padding adjustment for better alignment */
 }
 
-.site-title{
-  font-size: 3rem;
+.site-title {
+  font-size: 2.5rem; /* Adjusted font size */
 }
 
-.nav ul{
-  padding: 0px;
+.nav ul {
+  padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
 }
 
-.nav a{
+.nav a {
   color: inherit;
   text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: .25rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-.nav li.active{
-  background-color: hsl(0, 94%, 79%);
+.nav a:hover {
+  background-color: #00796b; /* Darker teal shade on hover */
 }
 
-.nav li:hover{
-  background-color: hsl(0, 94%, 79%);
+/* Base styles */
+.App {
+  text-align: center;
+  background-color: #e0f7fa; /* Light cyan background */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
+
+h1 {
+  color: #004d40;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #00796b;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+}
+
+.inp-text-input-submit-payment {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inp-text-input-submit-payment:hover {
+  background-color: #004d40;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  form {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  select {
+    width: calc(100% - 0.5rem);
+  }
+}
+
+

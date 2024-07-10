@@ -174,25 +174,12 @@ function Fee() {
                                 </label>
                             </div>
                             <div>
-                                <label for="dinerNum">Diner #: {ranNum} &nbsp;
-                                <input type="hidden" id="dinerNum" name="dinerNum" value={ranNum}></input>
-                                </label>
-                            </div>
-                            <div>
                                 <label>Is the billing address above the same as the mailing address? &nbsp;</label>
                                 <input type="checkbox" id="mailingAddress" name="mailingAddress" value={sameAdd} onChange={handleChecked}></input>
-                            </div>
-                            <div>
-                                <label for="points">Points: {ranPoints} &nbsp;
-                                <input type="hidden" id="points" name="points" value={ranPoints}></input>
-                                </label>
                             </div>
                             <input type="submit" value="Submit" className="inp-text-input-submit-payment" onClick={handleInvalidDate}/>
                             {expiry === '0' || expiry === '01' || expiry === '1' || expiry === '02' || expiry === '03' || expiry === '04' || expiry === '05' || expiry === '06' || expiry === '07' || expiry === '08' || expiry === '09' || expiry === '10' || expiry === '11' || expiry === '12' ? <div>Please re-enter a valid date.</div> : null}
                         </span>
-                    </div>
-                    <div>
-                        <strong><u>NOTE: No show will result in a minimum of a $10 charge!</u></strong>
                     </div>
                 </form>
             </div>

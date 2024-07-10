@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function Nav() {
     return(
         <nav className="nav">
-            <a href="/home" className="site-title">Pho Bar and Grill<Link to='/home'></Link></a>
+            <a href="/home" className="site-title">Spice Symphony<Link to='/home'></Link></a>
             <div>
                 <p></p>
                     <svg height="19" viewBox="0 0 20 19" width="20" className="StarIcon">
@@ -12,29 +12,15 @@ function Nav() {
                     </svg>
                     <span>&nbsp;4.6&nbsp;</span>
                     <span>(90)&nbsp;&nbsp;&nbsp;</span>
-                    <span className="cuisine">❧ Vietnamese Cuisine </span>
+                    <span className="cuisine">South Indian Cuisine</span>
                 </div>
                 <div>
                 <p></p>
                     <svg height="1em" width="1em" viewBox="0 0 20 20" >
                         <path d="m10 1.5c3.5898509 0 6.5 2.91014913 6.5 6.5 0 3.1783736-1.8115848 5.4745544-4.9479735 8.6580075l-.8458482.8488788c-.611314.6003241-.75280912.6319201-1.31466848.094788l-.63253781-.6293629-.60151476-.6104719c-2.92840208-3.0013562-4.65745725-5.2721018-4.65745725-8.3618395 0-3.58985087 2.91014913-6.5 6.5-6.5zm0 4c-1.38071187 0-2.5 1.11928813-2.5 2.5s1.11928813 2.5 2.5 2.5c1.3807119 0 2.5-1.11928813 2.5-2.5s-1.1192881-2.5-2.5-2.5z" fillRule="evenodd"></path>
                     </svg>
-                    <span className="location">&nbsp;209 Star Esclipe Blv, HTX 77209</span>
+                    <span className="location">&nbsp;Mount Road, Chennai</span>
                 </div>
-            {/*<ul>
-                <li className="active">
-                    <a href="/reserve">Reserve<Link to='/reserve'></Link></a>
-                </li>
-                <li>
-                    <a href="/login">Login<Link to='/login'></Link></a>
-                </li>
-                <li>
-                    <a href="/register">Register<Link to='/register'></Link></a>
-                </li>
-                <li>
-                    <a href="/fee">Payment<Link to='/fee'></Link></a>
-                </li>
-            </ul>*/}
         </nav>
     );
 }

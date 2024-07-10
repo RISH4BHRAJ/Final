@@ -11,7 +11,7 @@ function Reserve() {
     const holiday = hd.getHolidays();
     //console.log(holiday)
 
-    const [guestnum, setGuestNum] = useState(1);
+    const [guestnum, setGuestNum] = useState(0);
     const minGuest = 1;
     const maxGuest = 16;
 
@@ -94,10 +94,7 @@ function Reserve() {
                             
                            {/* <input name='rsDate' id='rsDate' type={'date-local'} className='dtime' ></input>*/}
                             <DatePicker name='resDate' id = 'resDate' value={reserveDate} onChange={handleResDate} minDate={new Date()} required></DatePicker>
-                            <br></br><br></br>
-                            <text>$10 hold fee?</text>
-                            <input type={'checkbox'} checked={checked} name='highTraffic' id='highTraffic'></input>
-                            {/*<input name='highTraffic' value={holdFee} id='highTraffic'></input>*/}
+                            <br></br>
                             
                     {/*<DateTimePicker onChange={onChange} value={value} className="dtime" minDate={value} disableClock={true}/>*/}
                         <br></br><br></br>

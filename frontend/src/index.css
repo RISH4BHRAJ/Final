@@ -1,10 +1,14 @@
-/*Imported from Google Fonts*/
+/* Imported from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=PT+Sans+Narrow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: 'Montserrat Alternates', 'PT Sans Narrow', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Montserrat Alternates', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,10 +20,7 @@ code {
     monospace;
 }
 
-/*For all classes (files), change the font to...*/
-* { 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat Alternates';
+
+i {
+  font-family: 'PT Sans Narrow', sans-serif; 
 }
