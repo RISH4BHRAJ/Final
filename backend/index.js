@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://final-two-red.vercel.app/"],
+        origin: [""],
         methods: ["POST", "GET"],
         credentials: true
     }
